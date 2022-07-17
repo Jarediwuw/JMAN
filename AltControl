@@ -2,10 +2,6 @@ if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
 
-getgenv().Setting = {
-    Prefix = "jaredpogi"
-}
-
 table.insert(Settings['Host'], "Eymb0tsu")
 table.insert(Settings['Host'], "WillieJenkins65")
 
@@ -165,7 +161,7 @@ end
 
 local function cmds(msg,plr)
 	if isaop == false or table.find(Settings['Host'],game.Players:GetPlayerByUserId(plr).Name) then
-		if msg == Setting['Prefix'].."bring" then
+		if msg == Settings['Prefix'].."bring" then
 			if not isaop then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players:GetPlayerByUserId(plr).Character.HumanoidRootPart.CFrame.X,game.Players:GetPlayerByUserId(plr).Character.HumanoidRootPart.CFrame.Y,game.Players:GetPlayerByUserId(plr).Character.HumanoidRootPart.CFrame.Z)
                 Freeze(false)
@@ -173,33 +169,33 @@ local function cmds(msg,plr)
                 Blocking(false)
                 StopHover()
 			end
-		elseif msg == Setting['Prefix'].."drop" then
+		elseif msg == Settings['Prefix'].."drop" then
 			if not isaop then
                 DropCash(true)
                 Blocking(true)
             end
-		elseif msg == Setting['Prefix'].."stop" then
+		elseif msg == Settings['Prefix'].."stop" then
 			if not isaop then
                 DropCash(false)
                 Blocking(false)
              end
-		elseif msg == Setting['Prefix'].."freeze" then
+		elseif msg == Settings['Prefix'].."freeze" then
 			if not isaop then
                 Freeze(true)
              end
-		elseif msg == Setting['Prefix'].."unfreeze" then
+		elseif msg == Settings['Prefix'].."unfreeze" then
 			if not isaop then
                 Freeze(false)
              end
-		elseif msg == Setting['Prefix'].."wallet show" then
+		elseif msg == Settings['Prefix'].."wallet show" then
 			if not isaop then
                 ShowWallet()
              end
-		elseif msg == Setting['Prefix'].."wallet hide" then
+		elseif msg == Settings['Prefix'].."wallet hide" then
 			if not isaop then
                 HideWallet()
              end
-		elseif msg == Setting['Prefix'].."setup" then
+		elseif msg == Settings['Prefix'].."setup" then
 			if not isaop then
                 SetupLine(game.Players:GetPlayerByUserId(plr))
                 Freeze(false)
@@ -207,7 +203,7 @@ local function cmds(msg,plr)
                 Freeze(true)
                 StopHover()
             end
-		elseif msg == Setting['Prefix'].."crash" then
+		elseif msg == Settings['Prefix'].."crash" then
 			if not isaop then
                 if getgenv().Alts['Alt1'] == game.Players.LocalPlayer.UserId then
                     Freeze(false)
