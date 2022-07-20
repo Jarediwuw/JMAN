@@ -40,33 +40,43 @@ TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 30.000
 TextLabel_2.TextWrapped = true
-            
-local g=game:GetService("GroupService"):GetGroupsAsync(c.UserId)local i={}for a,a in pairs(g)do for a,a in pairs(a)do table.insert(i,a)end end
 
-game:GetService("RunService").RenderStepped:Connect(function() game:GetService("ReplicatedStorage").MainEvent:FireServer("JoinCrew",i[5])game:GetService("ReplicatedStorage").MainEvent:FireServer("LeaveCrew")c.PlayerGui.MainScreenGui.Crew.CrewFrame.Visible=false end)
-game:GetService("RunService").RenderStepped:Connect(function()
-    game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Enabled = false
-    game:GetService('Players').LocalPlayer.PlayerGui.Framework.CurrencySound.Volume = 0
-    game:GetService("CoreGui").RobloxGui.Backpack:Destroy()
-end)
-
-local player = game.Players.LocalPlayer
-for i,v in pairs(backpack:GetChildren()) do
-if v:IsA("Tool") then
-v:Destroy()
+itemCount = 0
+getgenv().groupid = nil
+game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
+local getGroups = game:GetService("GroupService"):GetGroupsAsync(game.Players.LocalPlayer.UserId)
+if unpack(getGroups) == nil then
+    warn('no groups'); return
+else
+	for _, groupInfo in pairs(getGroups) do
+	    if _ == 1 then
+            getgenv().groupid = groupInfo.Id
+        end
+	end
 end
-end
-wait(.5)
-game:GetService("RunService").Heartbeat:Connect(function()
-    for i,v in pairs(backpack:GetChildren()) do
-        if v.Name == "[SprayCan]" then
+function equipall()
+    for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v:IsA"Tool" and v.Name == "[SprayCan]" then
             v.Parent = game.Players.LocalPlayer.Character
-                a = a+1
-                TextLabel.Text = "Crashing: "..a.." / 1250"
-                    
-            if a == 1250 then
-                c.Character:FindFirstChildWhichIsA("Humanoid").Health = 0; c.Character:FindFirstChildWhichIsA("Humanoid"):Destroy()
-            end
         end
     end
+end
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Enabled = false
 end)
+
+repeat
+    task.wait()
+    game:GetService("ReplicatedStorage").MainEvent:FireServer("JoinCrew", getgenv().groupid)
+    repeat wait() until game.Players.LocalPlayer.Backpack:FindFirstChild'[SprayCan]'; task.wait()
+    itemCount = itemCount + 1;
+    TextLabel.Text = "Crashing: "..itemCount.." / 1250"
+    equipall()
+until itemCount >= 1200
+
+for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("BasePart") then
+        v:Destroy()
+    end
+end
